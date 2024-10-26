@@ -1,6 +1,6 @@
 # SleekWeave Dark
 
-<img src="/images/logo.png" alt="Logo" width="200">
+<img src="./images/logo (1).png" alt="Logo" width="200">
 
 ## About
 
@@ -8,8 +8,8 @@ A refined, modern dark theme with deep contrasts and subtle highlights, crafted 
 
 ## Screenshots
 
-<img src="/images/bg-1.png" alt="Screenshot 1" width="900">
-<img src="/images/bg-2.png" alt="Screenshot 2" height="500">
+<img src="./images/bg-1.png" alt="Screenshot 1" width="900">
+<img src="./images/bg-2.png" alt="Screenshot 2" height="500">
 
 ## Installation
 
