@@ -1,6 +1,6 @@
 # SleekWeave Dark
 
-<img src="./images/logo (1).png" alt="Logo" width="200">
+<img src="./images/logo2.png" alt="Logo" width="200">
 
 ## About
 
