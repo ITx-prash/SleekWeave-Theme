@@ -15,7 +15,7 @@ A refined, modern dark theme with deep contrasts and subtle highlights, crafted 
 
 ### Install from VSCode Marketplace 🛒
 
-1. Press **Ctrl+Shift+X to** open Extensions in VSCode.
+1. Press **Ctrl+Shift+X** to open Extensions in VSCode.
 2. Search for **Sleek Weave Dark** and click **Install**.
 3. Then select **Sleek Weave Dark** from the available themes list.
 
