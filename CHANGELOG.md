@@ -4,6 +4,18 @@ All notable changes to the "sleekweave-dark" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.3.0
+
+-Some minor adjustment
+
+## 1.2.0
+
+-Add banner
+
+## 1.1.0
+
+- Fix ions
+
 ## 1.0.0
 
 - Update base icon
