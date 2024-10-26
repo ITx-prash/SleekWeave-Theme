@@ -4,7 +4,7 @@
   "description": "A refined, modern dark theme with deep contrasts, subtle highlights, and efficient line highlighting, crafted to enhance readability and focus.",
   "version": "0.0.1",
   "publisher": "PrashantAdhikari",
-  "icon": "./images/logo.png",
+  "icon": "images/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/ITx-prash/SleekWeave-Theme"
@@ -16,6 +16,7 @@
     "vscode",
     "theme",
     "dark",
+    "theme dark",
     "dark theme",
     "pure dark",
     "coder theme"
