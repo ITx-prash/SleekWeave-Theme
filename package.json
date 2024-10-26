@@ -1,0 +1,35 @@
+{
+  "name": "sleekweave-dark",
+  "displayName": "SleekWeave Dark",
+  "description": "A refined, modern dark theme with deep contrasts, subtle highlights, and efficient line highlighting, crafted to enhance readability and focus.",
+  "version": "0.0.1",
+  "publisher": "PrashantAdhikari",
+  "icon": "./images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ITx-prash/SleekWeave-Theme"
+  },
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "keywords": [
+    "vscode",
+    "theme",
+    "dark",
+    "dark theme",
+    "pure dark",
+    "coder theme"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "SleekWeave Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/SleekWeave Dark-color-theme.json"
+      }
+    ]
+  }
+}
