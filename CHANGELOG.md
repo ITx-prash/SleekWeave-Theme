@@ -4,6 +4,10 @@ All notable changes to the "sleekweave-dark" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.4.0
+
+- Fix title bar color in Windows
+
 ## 1.3.0
 
 -Some minor adjustment
