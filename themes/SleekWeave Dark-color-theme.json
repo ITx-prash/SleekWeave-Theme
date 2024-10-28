@@ -31,10 +31,10 @@
     "terminal.ansiCyan": "#03aaf7",
     "terminal.background": "#000000",
     "terminalCursor.foreground": "#c7bfbf",
-    "titleBar.activeBackground": "#ffffff",
-    "titleBar.activeForeground": "#fcfcfc",
+    "titleBar.activeBackground": "#0f1214",
+    "titleBar.activeForeground": "#93b1d7",
     "titleBar.inactiveBackground": "#13161b",
-    "titleBar.inactiveForeground": "#ffffff",
+    "titleBar.inactiveForeground": "#7d8eac",
     "list.activeSelectionBackground": "#1c4b7d50",
     "focusBorder": "#000000",
     "list.hoverBackground": "#181d25"
