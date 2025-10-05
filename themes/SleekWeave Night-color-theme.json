@@ -229,7 +229,7 @@
     "scmGraph.historyItemHoverDeletionsForeground": "#e06c75", // Soft red for deletions
     "scmGraph.historyItemRefColor": "#36b0c5", // Branch labels - match activity bar
     "scmGraph.historyItemRemoteRefColor": "#5eb3b3", // Remote branches - teal
-    "scmGraph.historyItemBaseRefColor": "#8891d8", // Base branch - purple
+    "scmGraph.historyItemBaseRefColor": "#ab64ccec", // Base branch - purple
     "scmGraph.historyItemHoverDefaultLabelForeground": "#8891b3", // Match foreground
 
 
@@ -243,7 +243,7 @@
 
 
     // ========== DEBUG ICONS (Breakpoints) ==========
-    "debugIcon.breakpointForeground": "#c93a3a", // Breakpoint dot (dimmed red from #db4b4b)
+    "debugIcon.breakpointForeground": "#c93a3ace", // Breakpoint dot (dimmed red from #db4b4b)
     "debugIcon.breakpointDisabledForeground": "#414761", // Disabled breakpoint
     "debugIcon.breakpointUnverifiedForeground": "#a83d3d", // Unverified breakpoint (darker)
 
