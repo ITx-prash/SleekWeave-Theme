@@ -313,7 +313,7 @@
         "support.type.primitive.ts"
       ],
       "settings": {
-        "foreground": "#ff9e64"
+        "foreground": "#2ac3de" // Cyan for type names
       }
     },
     {
@@ -437,9 +437,7 @@
         "meta.arrow.js",
         "constant.other.caps.python",
         "variable.other.readwrite.ts",
-        "variable.other.readwrite.alias.ts",
-        "variable.other.constant.ts",
-        "variable.other.readwrite.alias.js"
+        "variable.other.constant.ts"
       ],
       "settings": {
         "foreground": "#e0af68"
@@ -526,8 +524,7 @@
         "keyword.control.loop"
       ],
       "settings": {
-        "foreground": "#bb9af7", // Purple for control keywords
-        "fontStyle": "italic"
+        "foreground": "#4b70c2" // Purple for control keywords (no italic)
       }
     },
     {
@@ -540,7 +537,19 @@
         "keyword.control.module"
       ],
       "settings": {
-        "foreground": "#7dcfff" // Cyan for import/export
+        "foreground": "#7dcfff" // Cyan for import/export (no italic)
+      }
+    },
+    {
+      "name": "Storage Type (function, const, let, var, class)",
+      "scope": [
+        "storage.type",
+        "storage.type.function",
+        "storage.type.class",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#7aa2f7" // Purple for function/class keywords
       }
     },
     {
@@ -565,16 +574,60 @@
       }
     },
     {
+      "name": "HTML Tags (Regular)",
       "scope": [
         "entity.name.tag",
         "meta.tag.sgml",
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#f7768e"
+        "foreground": "#e74f6b" // Red for HTML tags
       }
     },
     {
+      "name": "React/JSX Components (Custom Components)",
+      "scope": [
+        "support.class.component",
+        "support.class.component.jsx",
+        "support.class.component.tsx",
+        "entity.name.tag support.class.component",
+        "meta.tag.custom entity.name.tag",
+        "meta.tag.without-attributes.js entity.name.tag.js",
+        "meta.tag.without-attributes.tsx entity.name.tag.tsx"
+      ],
+      "settings": {
+        "foreground": "#b33d53" // Slightly darker red for React components (Tokyo Night style)
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "support.variable",
+        "string constant.other.placeholder",
+        "variable.parameter.handlebars",
+        "variable.other.object",
+        "meta.fstring",
+        "meta.function-call meta.function-call.arguments",
+        "meta.embedded.inline.phpx constant.other.php"
+      ],
+      "settings": {
+        "foreground": "#7dcfff"
+      }
+    },
+    {
+      "name": "Sub-methods",
+      "scope": [
+        "entity.name.module.js",
+        "variable.import.parameter.js",
+        "variable.other.class.js"
+      ],
+      "settings": {
+        "foreground": "#7dcfff"
+      }
+    },
+    {
+      "name": "Function Definitions and Calls",
       "scope": [
         "entity.name.function",
         "meta.function-call",
@@ -583,7 +636,7 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#7aa2f7" // Blue for functions
       }
     },
     {
@@ -593,38 +646,71 @@
       }
     },
     {
-      "scope": ["meta.block variable.other"],
+      "scope": ["source.cpp meta.block variable.other"],
       "settings": {
         "foreground": "#f7768e"
       }
     },
     {
+      "name": "Constants - Numbers",
       "scope": [
-        "support.other.variable",
-        "string.other.link",
-        "constant.numeric.dec.python",
-        "meta.function-call.arguments.python",
-        "meta.indexed-name.python"
+        "constant.numeric",
+        "constant.numeric.dec",
+        "constant.numeric.integer"
       ],
       "settings": {
-        "foreground": "#ff9e64"
+        "foreground": "#7aa2f7" // Orange for numbers
       }
     },
     {
+      "name": "Constants - Language (true, false, null, undefined)",
       "scope": [
-        "constant.numeric",
         "constant.language",
-        "support.constant",
-        "constant.character",
-        "constant.escape",
-        "variable.parameter",
-        "keyword.other.unit",
-        "keyword.other",
-        "meta.item-access.arguments.python",
-        ""
+        "constant.language.boolean",
+        "constant.language.null",
+        "constant.language.undefined"
       ],
       "settings": {
-        "foreground": "#ff9e64"
+        "foreground": "#7aa2f7" // Orange for boolean/null
+      }
+    },
+    {
+      "name": "Function Parameters",
+      "scope": ["variable.parameter", "meta.function.parameters"],
+      "settings": {
+        "foreground": "#e0af68" // Yellow/tan for parameters (not orange)
+      }
+    },
+    {
+      "name": "Object Properties and Attributes",
+      "scope": [
+        "entity.other.attribute-name",
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.class",
+        "meta.attribute.class",
+        "variable.other.property"
+      ],
+      "settings": {
+        "foreground": "#73daca" // Teal for attributes (className, type, href, etc.)
+      }
+    },
+    {
+      "name": "Support/Other Variables",
+      "scope": ["support.other.variable", "string.other.link"],
+      "settings": {
+        "foreground": "#7dcfff" // Cyan instead of orange
+      }
+    },
+    {
+      "name": "Misc Keywords and Units",
+      "scope": [
+        "keyword.other.unit",
+        "keyword.other",
+        "constant.character",
+        "constant.escape"
+      ],
+      "settings": {
+        "foreground": "#bb9af7" // Purple for units (px, rem, etc.)
       }
     },
     {
@@ -677,17 +763,7 @@
         "foreground": "#7aa2f7"
       }
     },
-    {
-      "scope": [
-        "entity.name.module.js",
-        "variable.import.parameter.js",
-        "variable.other.class.js",
-        "keyword.control.import.python"
-      ],
-      "settings": {
-        "foreground": "#f7768e"
-      }
-    },
+
     {
       "scope": ["variable.language"],
       "settings": {
@@ -1042,17 +1118,23 @@
   "semanticTokenColors": {
     "namespace": "#c0caf5",
     "property": "#73daca",
+    "property.declaration": "#73daca",
+    "property.defaultLibrary": "#2ac3de",
     "interface": "#2ac3de",
     "type": "#2ac3de",
-    "class": "#ff9e64",
+    "class": "#7dcfff", // Bright cyan for class names (like Header, checkMark)
     "enum": "#2ac3de",
     "enumMember": "#73daca",
-    "variable": "#c0caf5",
+    "variable": "#7dcfff", // Bright cyan for imported variables
+    "variable.declaration": "#bb9af7",
+    "variable.defaultLibrary": "#2ac3de",
     "variable.readonly": "#73daca",
     "parameter": "#e0af68",
+    "parameter.declaration": "#e0af68",
+    "*.defaultLibrary": "#2ac3de",
     "function": "#7aa2f7",
     "method": "#7aa2f7",
-    "keyword": "#9d7cd8",
+    "keyword": "#bb9af7", // Purple for keywords (was #9d7cd8)
     "comment": {
       //comment
       "foreground": "#5d627a",
