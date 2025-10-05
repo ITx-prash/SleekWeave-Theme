@@ -166,6 +166,14 @@
     "toolbar.activeBackground": "#3b3e5280", // Active toolbar item
     "actionBar.toggledBackground": "#3b3e5280", // Toggled action background
 
+
+
+
+
+
+ 
+
+
     // ========== SEARCH EDITOR ==========
     // "searchEditor.findMatchBackground": "#2d3f5f80", // Search match highlight
     // "searchEditor.textInputBorder": "#3b3e52", // Search input border
@@ -184,6 +192,11 @@
     // "terminal.ansiBrightBlack": "#414868",
     // "terminal.ansiCyan": "#2089c6",
 
+
+
+
+
+
     // ========== GIT DECORATIONS (File colors in Explorer) ==========
     "gitDecoration.modifiedResourceForeground": "#6183bb", // FIX 4: Modified files (orange/yellow)
     "gitDecoration.deletedResourceForeground": "#f7768e", // Deleted files (red)
@@ -192,7 +205,7 @@
     "gitDecoration.conflictingResourceForeground": "#bb9af7", // Conflicting files (purple)
     //new
     "gitDecoration.submoduleResourceForeground": "#4e7ad8", // Submodules (blue)
-
+/*
     // ========== CHARTS / GIT GRAPH COLORS (Graph dots/lines) ==========
     "charts.red": "#e06c75", // Softer red for charts
     "charts.blue": "#6890d8", // Match your theme blue
@@ -204,19 +217,30 @@
     // "charts.lines": "#16161e", // Match background
     // "charts.lines": "#9c9faf", // Match background
 
+    */
     // ========== SCM/GIT GRAPH (Source Control Graph View) ==========
     "scmGraph.historyItemHoverLabelForeground": "#16161e", // Match background
     "scmGraph.foreground1": "#6890d8", // Blue (main branch) - matches theme
-    "scmGraph.foreground2": "#8891d8", // Purple (feature branches) - matches activity bar
-    "scmGraph.foreground3": "#5eb3b3", // Teal (other branches)
+    "scmGraph.foreground2": "#b85d39", // Purple (feature branches) - matches activity bar
+    "scmGraph.foreground3": "#3eb8b8", // Teal (other branches)
     "scmGraph.foreground4": "#d4b575", // Muted yellow (additional branches)
     "scmGraph.foreground5": "#e89664", // Softer orange (rare branches)
     "scmGraph.historyItemHoverAdditionsForeground": "#5eb3b3", // Teal for additions
     "scmGraph.historyItemHoverDeletionsForeground": "#e06c75", // Soft red for deletions
-    "scmGraph.historyItemRefColor": "#686bc2", // Branch labels - match activity bar
+    "scmGraph.historyItemRefColor": "#36b0c5", // Branch labels - match activity bar
     "scmGraph.historyItemRemoteRefColor": "#5eb3b3", // Remote branches - teal
     "scmGraph.historyItemBaseRefColor": "#8891d8", // Base branch - purple
     "scmGraph.historyItemHoverDefaultLabelForeground": "#8891b3", // Match foreground
+
+
+
+
+
+
+
+
+
+
 
     // ========== DEBUG ICONS (Breakpoints) ==========
     "debugIcon.breakpointForeground": "#c93a3a", // Breakpoint dot (dimmed red from #db4b4b)
