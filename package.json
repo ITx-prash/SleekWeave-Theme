@@ -1,8 +1,8 @@
 {
   "name": "sleekweave-dark",
   "displayName": "SleekWeave Dark",
-  "description": "A refined, modern dark theme with deep contrasts, subtle highlights, and efficient line highlighting, crafted to enhance readability and focus.",
-  "version": "1.4.0",
+  "description": "A refined, modern dark theme collection designed for an immersive coding experience — featuring deep contrasts, subtle highlights, and smooth line focus. Includes SleekWeave Dark and SleekWeave Night variants.",
+  "version": "1.6.0",
   "publisher": "PrashantAdhikari",
   "icon": "images/logo.png",
   "repository": {
@@ -33,6 +33,11 @@
         "label": "SleekWeave Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/SleekWeave Dark-color-theme.json"
+      },
+      {
+        "label": "SleekWeave Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/SleekWeave Night-color-theme.json"
       }
     ]
   }
