@@ -1,32 +1,37 @@
 # Change Log
 
-All notable changes to the "sleekweave-dark" extension will be documented in this file.
+All notable changes to the **SleekWeave Theme** extension are documented here.  
+For guidance on structuring changelogs, see [Keep a Changelog](http://keepachangelog.com/).
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 1.6.0
+
+- **Rebrand:** Extension rename to **SleekWeave Theme** (formerly SleekWeave Dark)
+- **New Variant:** Introduce **SleekWeave Night** with softer purple & blue tones
+- **Palette Optimization:** Adjust colors in Night variant for reduced eye strain
 
 ## 1.5.0
 
-- Minor color adjustment
+- Minor tweaks to syntax highlighting for better contrast
 
 ## 1.4.0
 
-- Fix title bar color in Windows
+- Fix title bar color on Windows
 
 ## 1.3.0
 
-- Some minor adjustment
+- Adjust sidebar and panel colors for consistency
 
 ## 1.2.0
 
-- Add banner
+- Add banner image to showcase the theme
 
 ## 1.1.0
 
-- Fix icons
+- Fix icon colors for better visibility in VSCode
 
 ## 1.0.0
 
-- Update base icon
+- Update base icon and released stable Dark variant
 
 ## 0.0.1
 
