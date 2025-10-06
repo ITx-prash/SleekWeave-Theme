@@ -1,6 +1,7 @@
 {
   "name": "SleekWeave Night",
   "type": "dark",
+  "semanticHighlighting": true,
   "colors": {
     // "activityBar.activeBackground": "#1f2335",
     // "activityBar.foreground": "#686bc2",
@@ -64,10 +65,9 @@
     // "list.hoverBackground": "#13131a",  // Item background when hovering
     "list.hoverBackground": "#191c2b", // Item background when hovering
     "list.activeSelectionBackground": "#1c1d29", // Selected item background
-    "list.inactiveSelectionBackground": "#1c1d29", // Selected when not focused
+    "list.inactiveSelectionBackground": "#00000000", // Transparent - no highlight for inactive selections
     "list.focusBackground": "#1c1d29", // Focused item background
-    // "list.focusForeground": "#a9b1d6",  // Focused item text
-    "list.focusForeground": "#1C1d29", // Focused item text
+    "list.focusForeground": "#a9b1d6", // Focused item text (visible color)
 
     // ========== EDITOR ==========
     "editor.background": "#1a1b26",
@@ -105,6 +105,7 @@
     "tab.inactiveBackground": "#16161e", // Inactive tab background (same as active)
     "editorGroupHeader.tabsBackground": "#16161e", // Tab header background
     "editorGroupHeader.tabsBorder": "#101014", // Border below tab row (dark line)
+    "editorGroup.border": "#101014", // Vertical line between split editor windows
 
     // ========== STATUS BAR ==========
     "statusBar.background": "#16161e",
@@ -166,14 +167,6 @@
     "toolbar.activeBackground": "#3b3e5280", // Active toolbar item
     "actionBar.toggledBackground": "#3b3e5280", // Toggled action background
 
-
-
-
-
-
- 
-
-
     // ========== SEARCH EDITOR ==========
     // "searchEditor.findMatchBackground": "#2d3f5f80", // Search match highlight
     // "searchEditor.textInputBorder": "#3b3e52", // Search input border
@@ -192,11 +185,6 @@
     // "terminal.ansiBrightBlack": "#414868",
     // "terminal.ansiCyan": "#2089c6",
 
-
-
-
-
-
     // ========== GIT DECORATIONS (File colors in Explorer) ==========
     "gitDecoration.modifiedResourceForeground": "#6183bb", // FIX 4: Modified files (orange/yellow)
     "gitDecoration.deletedResourceForeground": "#f7768e", // Deleted files (red)
@@ -205,7 +193,7 @@
     "gitDecoration.conflictingResourceForeground": "#bb9af7", // Conflicting files (purple)
     //new
     "gitDecoration.submoduleResourceForeground": "#4e7ad8", // Submodules (blue)
-/*
+    /*
     // ========== CHARTS / GIT GRAPH COLORS (Graph dots/lines) ==========
     "charts.red": "#e06c75", // Softer red for charts
     "charts.blue": "#6890d8", // Match your theme blue
@@ -231,16 +219,6 @@
     "scmGraph.historyItemRemoteRefColor": "#5eb3b3", // Remote branches - teal
     "scmGraph.historyItemBaseRefColor": "#ab64ccec", // Base branch - purple
     "scmGraph.historyItemHoverDefaultLabelForeground": "#8891b3", // Match foreground
-
-
-
-
-
-
-
-
-
-
 
     // ========== DEBUG ICONS (Breakpoints) ==========
     "debugIcon.breakpointForeground": "#c93a3ace", // Breakpoint dot (dimmed red from #db4b4b)
@@ -321,11 +299,7 @@
         "entity.name.function.cs",
         "entity.name.variable.local.cs",
         "variable.other.object.property.cs",
-        "variable.other.readwrite.cs",
-        "keyword.control.import.ts",
-        "keyword.control.from.ts",
-        "keyword.control.import.js",
-        "keyword.control.from.js"
+        "variable.other.readwrite.cs"
       ],
       "settings": {
         "foreground": "#7aa2f7"
@@ -380,7 +354,6 @@
         "comment.block.tsx"
       ],
       "settings": {
-        //comment
         "foreground": "#5d627a",
         "fontStyle": "italic"
       }
@@ -401,16 +374,23 @@
     {
       "scope": ["variable.other.readwrite.js"],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#4979FC"
       }
     },
     {
-      "scope": ["entity.name.function.js"],
+      "name": "Function names",
+      "scope": [
+        "entity.name.function",
+        "entity.name.function.js",
+        "entity.name.function.jsx",
+        "entity.name.function.ts",
+        "entity.name.function.tsx"
+      ],
       "settings": {
-        //hola
-        "foreground": "#7aa2f7"
+        "foreground": "#2FF76B" // Bright greenish for function names (more noticeable)
       }
     },
+
     {
       "scope": [
         "meta.object-literal.key.js",
@@ -418,7 +398,7 @@
         "meta.objectliteral.js"
       ],
       "settings": {
-        "foreground": "#73daca"
+        "foreground": "#00FAA7"
       }
     },
     {
@@ -433,20 +413,60 @@
     {
       "scope": [
         "variable.parameter.js",
+        "variable.parameter.ts",
         "meta.parameters.js",
-        "meta.arrow.js",
-        "constant.other.caps.python",
-        "variable.other.readwrite.ts",
-        "variable.other.constant.ts"
+        "meta.parameters.ts",
+        "meta.arrow.js"
       ],
       "settings": {
         "foreground": "#e0af68"
       }
     },
     {
+      "scope": [
+        "constant.other.caps.python",
+        "variable.other.readwrite.ts",
+        "variable.other.constant.ts"
+      ],
+      "settings": {
+        "foreground": "#4979FC"
+      }
+    },
+    {
       "scope": ["entity.other.njk.delimiter.tag", "variable.other.njk"],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#4979FC"
+      }
+    },
+
+    {
+      "name": "Methods",
+      "scope": [
+        "meta.class-method.js entity.name.function.js",
+        "meta.class-method.ts entity.name.function.ts",
+        "meta.property.object.js entity.name.function.js",
+        "meta.property.object.jsx entity.name.function.jsx",
+        "meta.property.object.ts entity.name.function.ts",
+        "meta.property.object.tsx entity.name.function.tsx",
+        "meta.method-call entity.name.function",
+        "meta.method-call entity.name.function.js",
+        "meta.method-call entity.name.function.ts",
+        "meta.method-call entity.name.function.jsx",
+        "meta.method-call entity.name.function.tsx",
+        "meta.function-call.method entity.name.function",
+        "meta.function-call.method entity.name.function.js",
+        "meta.function-call.method entity.name.function.ts",
+        "meta.function-call.method entity.name.function.jsx",
+        "meta.function-call.method entity.name.function.tsx",
+        "entity.name.method",
+        "entity.name.method.js",
+        "entity.name.method.ts",
+        "variable.function.constructor",
+        "keyword.other.special-method",
+        "storage.type.cs"
+      ],
+      "settings": {
+        "foreground": "#2FF76B" // Bright green for methods like .push(), .log()
       }
     },
     {
@@ -501,8 +521,7 @@
         "keyword.other.unit.vh.css",
         "keyword.other.unit.rem.css",
         "keyword.other.unit.em.css",
-        "keyword.other.unit.ms.css",
-        "keyword.control.export.ts"
+        "keyword.other.unit.ms.css"
       ],
       "settings": {
         "foreground": "#bb9af7"
@@ -524,7 +543,7 @@
         "keyword.control.loop"
       ],
       "settings": {
-        "foreground": "#4b70c2" // Purple for control keywords (no italic)
+        "foreground": "#5dd8d2" // Purple for control keywords (no italic)
       }
     },
     {
@@ -537,7 +556,7 @@
         "keyword.control.module"
       ],
       "settings": {
-        "foreground": "#7dcfff" // Cyan for import/export (no italic)
+        "foreground": "#7dcfff" // Cyan (same as Tokyo Night)
       }
     },
     {
@@ -549,7 +568,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#7aa2f7" // Purple for function/class keywords
+        "foreground": "#F8AA35" // Orange color for keywords (function, const, let, var)
       }
     },
     {
@@ -557,7 +576,7 @@
       "scope": [
         "constant.other.color",
         "punctuation",
-        "meta.tag",
+        // "meta.tag",
         "punctuation.definition.tag",
         "punctuation.separator.inheritance.php",
         "punctuation.definition.tag.html",
@@ -566,11 +585,18 @@
         "punctuation.section.embedded",
         "keyword.other.template",
         "keyword.other.substitution",
+        "keyword.operator",
+        "keyword.operator.assignment",
+        "keyword.operator.assignment.js",
+        "keyword.operator.assignment.ts",
+        "keyword.operator.assignment.jsx",
+        "keyword.operator.assignment.tsx",
+        "keyword.operator.assignment.html",
         "keyword.operator.new.ts",
         "meta.object-literal.key.ts"
       ],
       "settings": {
-        "foreground": "#89ddff" // Cyan for punctuation
+        "foreground": "#89DDFF" // Cyan for punctuation and operators including =
       }
     },
     {
@@ -581,7 +607,7 @@
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#e74f6b" // Red for HTML tags
+        "foreground": "#e76b82" // Red for HTML tags
       }
     },
     {
@@ -596,7 +622,7 @@
         "meta.tag.without-attributes.tsx entity.name.tag.tsx"
       ],
       "settings": {
-        "foreground": "#b33d53" // Slightly darker red for React components (Tokyo Night style)
+        "foreground": "#de5971" // Slightly darker red for React components (Tokyo Night style)
       }
     },
     {
@@ -612,7 +638,7 @@
         "meta.embedded.inline.phpx constant.other.php"
       ],
       "settings": {
-        "foreground": "#7dcfff"
+        "foreground": "#4979FC"
       }
     },
     {
@@ -623,26 +649,52 @@
         "variable.other.class.js"
       ],
       "settings": {
-        "foreground": "#7dcfff"
+        "foreground": "#0db9d7"
       }
     },
     {
-      "name": "Function Definitions and Calls",
+      "name": "Function Definitions and Calls (standalone functions only)",
+      "scope": ["variable.function", "support.function"],
+      "settings": {
+        "foreground": "#2ff76bd5" // Bright green for standalone functions
+      }
+    },
+    {
+      "name": "Methods (object methods like .push, .log)",
       "scope": [
-        "entity.name.function",
-        "meta.function-call",
-        "variable.function",
-        "support.function",
+        "meta.property.object entity.name.function",
+        "meta.property.object.js entity.name.function.js",
+        "meta.property.object.jsx entity.name.function.jsx",
+        "meta.property.object.ts entity.name.function.ts",
+        "meta.property.object.tsx entity.name.function.tsx",
+        "meta.function-call.method entity.name.function",
+        "meta.function-call.method entity.name.function.js",
+        "meta.function-call.method entity.name.function.ts",
+        "meta.function-call.method entity.name.function.jsx",
+        "meta.function-call.method entity.name.function.tsx",
+        "meta.method-call entity.name.function",
+        "meta.method-call entity.name.function.js",
+        "meta.method-call entity.name.function.ts",
+        "meta.method-call entity.name.function.jsx",
+        "meta.method-call entity.name.function.tsx",
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#7aa2f7" // Blue for functions
+        "foreground": "#2FF76B" // Bright green for methods like .push(), .log()
       }
     },
     {
+      "name": "TypeScript method calls",
+      "scope": ["meta.function-call.method entity.name.function.ts"],
+      "settings": {
+        "foreground": "#2FF76B" // Bright green for TS methods
+      }
+    },
+    {
+      "name": "TypeScript function definitions",
       "scope": ["entity.name.function.ts"],
       "settings": {
-        "foreground": "#7aa2f7"
+        "foreground": "#2ff76bd5" // Green for TS function names
       }
     },
     {
@@ -659,7 +711,7 @@
         "constant.numeric.integer"
       ],
       "settings": {
-        "foreground": "#7aa2f7" // Orange for numbers
+        "foreground": "#4979FC" // Light grey for numbers
       }
     },
     {
@@ -678,20 +730,34 @@
       "name": "Function Parameters",
       "scope": ["variable.parameter", "meta.function.parameters"],
       "settings": {
-        "foreground": "#e0af68" // Yellow/tan for parameters (not orange)
+        "foreground": "#e9a744" // Yellow/tan for parameters (not orange)
       }
     },
     {
       "name": "Object Properties and Attributes",
+      "scope": ["variable.other.property", "variable.other.object.property"],
+      "settings": {
+        "foreground": "#00FAA7" // Bright green for object properties
+      }
+    },
+    {
+      "name": "HTML/JSX Attribute Names",
       "scope": [
         "entity.other.attribute-name",
         "entity.other.attribute-name.html",
+        "entity.other.attribute-name.js",
+        "entity.other.attribute-name.jsx",
+        "entity.other.attribute-name.ts",
+        "entity.other.attribute-name.tsx",
         "entity.other.attribute-name.class",
+        "entity.other.attribute-name.id",
         "meta.attribute.class",
-        "variable.other.property"
+        "text.html.basic entity.other.attribute-name",
+        "text.html.basic entity.other.attribute-name.html"
       ],
       "settings": {
-        "foreground": "#73daca" // Teal for attributes (className, type, href, etc.)
+        "foreground": "#cfa226e8",
+        "fontStyle": "italic"
       }
     },
     {
@@ -724,7 +790,19 @@
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#9ece6a"
+        "foreground": "#47dd9ce0" // Fresh teal for strings (attribute values like "home-page", "icon")
+      }
+    },
+    {
+      "name": "HTML/JSX Text Content between tags",
+      "scope": [
+        "text.html.basic",
+        "meta.jsx.children.tsx",
+        "meta.jsx.children.js",
+        "meta.embedded.block.html"
+      ],
+      "settings": {
+        "foreground": "#9AA5CE" // Noticeable bluish color for text between tags
       }
     },
     {
@@ -779,35 +857,9 @@
       }
     },
     {
-      "scope": [
-        "meta.class-method.js entity.name.function.js",
-        "variable.function.constructor"
-      ],
+      "scope": ["variable.function.constructor"],
       "settings": {
-        "foreground": "#7aa2f7"
-      }
-    },
-    {
-      "scope": ["entity.other.attribute-name"],
-      "settings": {
-        "foreground": "#e0af68",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [
-        "text.html.basic entity.other.attribute-name.html",
-        "text.html.basic entity.other.attribute-name"
-      ],
-      "settings": {
-        "foreground": "#e0af68",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": ["entity.other.attribute-name.class"],
-      "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#2ff76bd5"
       }
     },
     {
@@ -876,7 +928,7 @@
         "source.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#bb9af7"
+        "foreground": "#0DB9D7"
       }
     },
     {
@@ -884,7 +936,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#e0af68"
+        "foreground": "#0DB9D7"
       }
     },
     {
@@ -948,6 +1000,8 @@
         "text.html.markdown",
         "punctuation.definition.list_item.markdown",
         "meta.paragraph.markdown"
+        //here
+        // "text.html.derivative"
       ],
       "settings": {
         "foreground": "#7aa2f7"
@@ -1117,35 +1171,43 @@
 
   "semanticTokenColors": {
     "namespace": "#c0caf5",
-    "property": "#73daca",
-    "property.declaration": "#73daca",
-    "property.defaultLibrary": "#2ac3de",
+    "property": "#00FAA7",
+    "property.declaration": "#00FAA7",
+    "property.defaultLibrary": "#4979FC", // Blue for default library properties like console
     "interface": "#2ac3de",
     "type": "#2ac3de",
-    "class": "#7dcfff", // Bright cyan for class names (like Header, checkMark)
+    "class": "#0db9d7", // Teal cyan for class names (like Header, checkMark)
     "enum": "#2ac3de",
-    "enumMember": "#73daca",
-    "variable": "#7dcfff", // Bright cyan for imported variables
-    "variable.declaration": "#bb9af7",
-    "variable.defaultLibrary": "#2ac3de",
-    "variable.readonly": "#73daca",
-    "parameter": "#e0af68",
-    "parameter.declaration": "#e0af68",
-    "*.defaultLibrary": "#2ac3de",
-    "function": "#7aa2f7",
-    "method": "#7aa2f7",
-    "keyword": "#bb9af7", // Purple for keywords (was #9d7cd8)
+    "enumMember": "#00FAA7",
+    "variable": "#4979FC", // Blue for variables (let/var bindings)
+    "variable.local": "#4979FC",
+    "variable.readwrite": "#4979FC",
+    "variable.readwrite.local": "#4979FC",
+    "variable.declaration": "#4979FC",
+    "variable.declaration.local": "#4979FC",
+    "variable.declaration.readwrite": "#4979FC",
+    "variable.defaultLibrary": "#4979FC", // Blue for console and other default library variables
+    "variable.readonly": "#4979FC", // Blue for const variables (same as other variables)
+    "variable.readonly.local": "#4979FC",
+    "variable.readonly.declaration": "#4979FC",
+    "parameter": "#4979FC", // Blue for parameters (same as variables)
+    "parameter.declaration": "#4979FC",
+    "parameter.readwrite": "#4979FC",
+    "*.defaultLibrary": "#4979FC", // Blue for all default library items including console
+    "function": "#2ff76be8", // Bright greenish for function names (more noticeable)
+    "method": "#2FF76B", // Bright green for methods like .push(), .log()
+    "keyword": "#F8AA35", // Orange color for keywords like function/const/let
     "comment": {
       //comment
       "foreground": "#5d627a",
       "fontStyle": "italic"
     },
-    "string": "#9ece6a",
-    "number": "#ff9e64",
+    "string": "#828bb8", // Dimmer greyish for title content ("Ecommerce Project")
+    "number": "#E1E4E8", // Light grey for numbers
     "regexp": "#b4f9f8",
     //hola
     // "operator": "#89ddff",
-    "operator": "#bb9af7",
-    "macro": "#7aa2f7"
+    "operator": "#89DDFF",
+    "macro": "#2ff76bd5"
   }
 }
