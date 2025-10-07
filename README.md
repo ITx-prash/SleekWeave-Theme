@@ -1,4 +1,20 @@
-# SleekWeave Theme
+<p align="center">
+  <img src="./images/logo.png" alt="SleekWeave Theme Logo" width="128" height="128">
+</p>
+
+<h1 align="center">SleekWeave Theme</h1>
+
+<p align="center">
+  <em>A refined, modern dark theme collection for VS Code</em>
+</p>
+
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=PrashantAdhikari.sleekweave-dark">VS Code Marketplace</a> •
+  <a href="https://github.com/ITx-prash/SleekWeave-Theme">GitHub</a> •
+  <a href="https://github.com/ITx-prash/SleekWeave-Theme/issues">Report Issue</a>
+</p>
+
+---
 
 SleekWeave Dark has evolved into **SleekWeave Theme**, now featuring a new theme variant: **SleekWeave Night**. Designed to meet my coding preferences for an optimal development experience.
 
