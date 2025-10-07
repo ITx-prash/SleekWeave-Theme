@@ -8,9 +8,9 @@ SleekWeave Dark has evolved into **SleekWeave Theme**, now featuring a new theme
 
 A sleek dark theme with softer purple and blue tones, designed for extended coding sessions with reduced eye strain.
 
-<img src="./images/sleekweave-night-preview1.png" alt="SleekWeave Night Preview 1" width="900">
+![SleekWeave Night - Preview 1](./images/sleekweave-night-preview1.png)
 
-<img src="./images/sleekweave-night-preview2.png" alt="SleekWeave Night Preview 2" height="400">
+![SleekWeave Night - Preview 2](./images/sleekweave-night-preview2.png)
 
 ---
 
@@ -18,9 +18,9 @@ A sleek dark theme with softer purple and blue tones, designed for extended codi
 
 The original variant, featuring a rich dark background with deep contrasts and a vibrant color palette for maximum code clarity and readability.
 
-<img src="./images/sleekweave-dark-preview1.png" alt="SleekWeave Dark Preview" width="900">
+![SleekWeave Dark - Preview 1](./images/sleekweave-dark-preview1.png)
 
-<img src="./images/sleekweave-dark-preview2.png" alt="SleekWeave Dark Preview 2" height="400">
+![SleekWeave Dark - Preview 2](./images/sleekweave-dark-preview2.png)
 
 ---
 
