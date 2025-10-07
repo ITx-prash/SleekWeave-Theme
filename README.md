@@ -44,6 +44,15 @@ The original variant, featuring a rich dark background with deep contrasts and a
 3.  Restart Visual Studio Code.
 4.  Go to **Settings > Color Theme** and select your preferred **SleekWeave** variant.
 
+## Support
+
+If you enjoy using SleekWeave Theme:
+- ⭐ Star this repository on [GitHub](https://github.com/ITx-prash/SleekWeave-Theme)
+- ✍️ Leave a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=PrashantAdhikari.sleekweave-dark&ssr=false#review-details)
+- 🐛 Report bugs or suggest features via [GitHub Issues](https://github.com/ITx-prash/SleekWeave-Theme/issues)
+
+Your feedback and contributions are greatly appreciated!
+
 ## License
 
 This theme is open source and available under the [MIT License](LICENSE).
