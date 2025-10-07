@@ -3,6 +3,11 @@
 All notable changes to the **SleekWeave Theme** extension are documented here.  
 For guidance on structuring changelogs, see [Keep a Changelog](http://keepachangelog.com/).
 
+## 1.6.2
+
+- Improve documentation and README formatting
+- Fix responsive image scaling
+
 ## 1.6.1
 
 - **Default Theme:** Set SleekWeave Night as the default theme (reordered in theme list)
