@@ -30,14 +30,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "SleekWeave Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/SleekWeave Dark-color-theme.json"
-      },
-      {
         "label": "SleekWeave Night",
         "uiTheme": "vs-dark",
         "path": "./themes/SleekWeave Night-color-theme.json"
+      },
+      {
+        "label": "SleekWeave Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/SleekWeave Dark-color-theme.json"
       }
     ]
   }
