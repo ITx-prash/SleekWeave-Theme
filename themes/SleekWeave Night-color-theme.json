@@ -47,6 +47,7 @@
     "list.hoverBackground": "#191c2b",
     "list.focusBackground": "#1c1d29",
     "list.focusForeground": "#a9b1d6",
+    "list.dropBackground": "#2d3f5f40", 
 
     "editor.background": "#171822",
     "editor.foreground": "#b4bbdc",
@@ -81,6 +82,7 @@
     "editorGroupHeader.tabsBackground": "#16161e",
     "editorGroupHeader.tabsBorder": "#101014",
     "editorGroup.border": "#101014",
+    "editorGroup.dropBackground": "#2d3f5fa3",
 
     "statusBar.background": "#16161e",
     "statusBar.foreground": "#787c99",
