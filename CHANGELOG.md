@@ -3,6 +3,11 @@
 All notable changes to the **SleekWeave Theme** extension are documented here.  
 For guidance on structuring changelogs, see [Keep a Changelog](http://keepachangelog.com/).
 
+## 1.6.3
+
+- Add drop background colors for list and editor group in Night theme
+- Improve drag-and-drop visual feedback with subtle, theme-consistent highlights
+
 ## 1.6.2
 
 - Improve documentation and README formatting
