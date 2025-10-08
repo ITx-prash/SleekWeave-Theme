@@ -3,6 +3,11 @@
 All notable changes to the **SleekWeave Theme** extension are documented here.  
 For guidance on structuring changelogs, see [Keep a Changelog](http://keepachangelog.com/).
 
+## 1.6.4
+
+- **Visual Enhancement:** Replace logo with banner image in README for improved presentation
+- **Content Simplification:** Remove duplicate Support section to streamline README
+
 ## 1.6.3
 
 - Add drop background colors for list and editor group in Night theme
