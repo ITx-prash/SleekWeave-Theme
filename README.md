@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="./images/logo.png" alt="SleekWeave Theme Logo" width="128" height="128">
+  <img src="./images/banner.png" alt="SleekWeave Theme Banner">
 </p>
-
-<h1 align="center">SleekWeave Theme</h1>
 
 <p align="center">
   <em>A refined, modern dark theme collection for VS Code</em>
@@ -10,7 +8,7 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=PrashantAdhikari.sleekweave-dark">VS Code Marketplace</a> •
-  <a href="https://github.com/ITx-prash/SleekWeave-Theme">GitHub</a> •
+  <a href="https://github.com/ITx-prash/SleekWeave-Theme"> GitHub</a> •
   <a href="https://github.com/ITx-prash/SleekWeave-Theme/issues">Report Issue</a>
 </p>
 
