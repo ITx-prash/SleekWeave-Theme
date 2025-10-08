@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="./images/logo.png" alt="SleekWeave Theme Logo" width="128" height="128">
+  <img src="./images/banner.png" alt="SleekWeave Theme Banner">
 </p>
-
-<h1 align="center">SleekWeave Theme</h1>
 
 <p align="center">
   <em>A refined, modern dark theme collection for VS Code</em>
@@ -59,16 +57,6 @@ The original variant, featuring a rich dark background with deep contrasts and a
     - **Linux/macOS**: `~/.vscode/extensions`
 3.  Restart Visual Studio Code.
 4.  Go to **Settings > Color Theme** and select your preferred **SleekWeave** variant.
-
-## Support
-
-If you enjoy using SleekWeave Theme:
-
-- ⭐ Star this repository on [GitHub](https://github.com/ITx-prash/SleekWeave-Theme)
-- ✍️ Leave a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=PrashantAdhikari.sleekweave-dark&ssr=false#review-details)
-- 🐛 Report bugs or suggest features via [GitHub Issues](https://github.com/ITx-prash/SleekWeave-Theme/issues)
-
-Your feedback and contributions are greatly appreciated!
 
 ## License
 
