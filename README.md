@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=PrashantAdhikari.sleekweave-dark">VS Code Marketplace</a> •
-  <a href="https://github.com/ITx-prash/SleekWeave-Theme"> GitHub</a> •
+  <a href="https://github.com/ITx-prash/SleekWeave-Theme">GitHub</a> •
   <a href="https://github.com/ITx-prash/SleekWeave-Theme/issues">Report Issue</a>
 </p>
 
