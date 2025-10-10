@@ -3,6 +3,10 @@
 All notable changes to the **SleekWeave Theme** extension are documented here.  
 For guidance on structuring changelogs, see [Keep a Changelog](http://keepachangelog.com/).
 
+## 1.6.5
+
+- Enhance README design with styled badges and improved visual hierarchy
+
 ## 1.6.4
 
 - **Visual Enhancement:** Replace logo with banner image in README for improved presentation
